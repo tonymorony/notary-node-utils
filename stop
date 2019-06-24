@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Stopping Iguana"
+pkill -15 iguana
+echo "Stopping Komodo"
+komodo-cli stop
+echo "Stopping Chips"
+chips-cli stop
+echo "Stopping Game"
+game-cli stop
+echo "Stopping EMC2"
+emc2-cli stop
+echo "Stopping GIN"
+gin-cli stop

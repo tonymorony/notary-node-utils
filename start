@@ -1,0 +1,13 @@
+#!/bin/bash
+source pubkey.txt
+args="-pubkey=$pubkey"
+echo "Starting Komodo"
+komodod $args -notary &
+echo "Starting Chips"
+chipsd $args &
+echo "Starting GameCredits"
+gamed $args &
+echo "Starting EMC2"
+einsteiniumd $args &
+echo "Starting GIN"
+gincoind $args &
