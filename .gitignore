@@ -1,2 +1,5 @@
 pubkey.txt
 privkey.txt
+calcaddress/DB/
+calcaddress/marketmaker
+calcaddress/myipaddr
