@@ -11,7 +11,7 @@ if [[ -z $1 ]]; then
 fi
 passphrase=$1
 
-# To import without rescan set $1 to false. 
+# To import without rescan set $1 to false.
 if [[ -z $2 ]]; then
     rescan="true"
 else
@@ -19,7 +19,6 @@ else
 fi
 
 # Optionally count UTXOs for a single coin
-# e.g ./importwif.sh 
 specific_coin=$3
 
 ../listcoins.sh | while read coin; do
