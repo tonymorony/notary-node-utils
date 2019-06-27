@@ -7,7 +7,7 @@ specific_coin=$1
 
 komodo_cli="komodo-cli"
 chips_cli="chips-cli"
-game_cli="game-cli"
+game_cli="gamecredits-cli"
 hush3_cli="${komodo_cli} -ac_name=HUSH3"
 einsteinium_cli="einsteinium-cli"
 gincoin_cli="gincoin-cli"
