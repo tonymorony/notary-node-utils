@@ -13,5 +13,8 @@ fi
 if [[ ${coin} = "EMC2" ]]; then
   utxo_size=100000
 fi
+if [[ ${coin} = "AYA" ]]; then
+  utxo_size=100000
+fi
 
 curl "http://127.0.0.1:$iguana_port" --silent --data "{\"coin\":\"${coin}\",\"agent\":\"iguana\",\"method\":\"splitfunds\",\"satoshis\":${utxo_size},\"sendflag\":1,\"duplicates\":${duplicates}}"

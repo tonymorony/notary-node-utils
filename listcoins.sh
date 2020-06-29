@@ -15,8 +15,10 @@ fi
 # 3rd party daemons
 if [[ "${server_type}" = "secondary" ]]; then
   echo "CHIPS"
-  echo "GAME"
+#  echo "GAME"
   echo "EMC2"
-  echo "GIN"
+#  echo "GIN"
   echo "VRSC"
+  echo "AYA"
+  echo "MCL"
 fi

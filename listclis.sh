@@ -10,10 +10,12 @@ server_type=$(cat server_type.txt)
 komodo_cli="komodo-cli"
 bitcoin_cli="bitcoin-cli"
 chips_cli="chips-cli"
-game_cli="gamecredits-cli"
+#game_cli="gamecredits-cli"
 einsteinium_cli="einsteinium-cli"
-gincoin_cli="gincoin-cli"
+#gincoin_cli="gincoin-cli"
+aya_cli="aryacoin-cli"
 verus_cli="${komodo_cli} -ac_name=VRSC"
+mcl_cli="${komodo_cli} -ac_name=MCL"
 
 # Komodo
 if [[ -z "${specific_coin}" ]] || [[ "${specific_coin}" = "KMD" ]]; then
@@ -48,5 +50,11 @@ if [[ "${server_type}" = "secondary" ]]; then
   fi
   if [[ -z "${specific_coin}" ]] || [[ "${specific_coin}" = "VRSC" ]]; then
     echo ${verus_cli}
+  fi
+  if [[ -z "${specific_coin}" ]] || [[ "${specific_coin}" = "AYA" ]]; then
+    echo ${aya_cli}
+  fi
+  if [[ -z "${specific_coin}" ]] || [[ "${specific_coin}" = "MCL" ]]; then
+    echo ${mcl_cli}
   fi
 fi
