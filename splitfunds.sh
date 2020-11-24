@@ -19,5 +19,8 @@ fi
 if [[ ${coin} = "GLEEC" ]]; then
   utxo_size=10000
 fi
+if [[ ${coin} = "PBC" ]]; then
+  utxo_size=10000
+fi
 
 curl "http://127.0.0.1:$iguana_port" --silent --data "{\"coin\":\"${coin}\",\"agent\":\"iguana\",\"method\":\"splitfunds\",\"satoshis\":${utxo_size},\"sendflag\":1,\"duplicates\":${duplicates}}"
