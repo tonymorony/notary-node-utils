@@ -16,6 +16,7 @@ einsteinium_cli="einsteinium-cli"
 aya_cli="aryacoin-cli"
 verus_cli="${komodo_cli} -ac_name=VRSC"
 mcl_cli="${komodo_cli} -ac_name=MCL"
+gleec_cli="gleecbtc-cli"
 
 # Komodo
 if [[ -z "${specific_coin}" ]] || [[ "${specific_coin}" = "KMD" ]]; then
@@ -56,5 +57,8 @@ if [[ "${server_type}" = "secondary" ]]; then
   fi
   if [[ -z "${specific_coin}" ]] || [[ "${specific_coin}" = "MCL" ]]; then
     echo ${mcl_cli}
+  fi
+  if [[ -z "${specific_coin}" ]] || [[ "${specific_coin}" = "GLEEC" ]]; then
+    echo ${gleec_cli}
   fi
 fi

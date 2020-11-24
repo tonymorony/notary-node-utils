@@ -21,4 +21,5 @@ if [[ "${server_type}" = "secondary" ]]; then
   echo "VRSC"
   echo "AYA"
   echo "MCL"
+  echo "GLEEC"
 fi
