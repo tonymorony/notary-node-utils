@@ -63,7 +63,6 @@ fi
 if [[ ${coin} = "GLEEC" ]]; then
   satoshis=10000
 fi
-fi
 if [[ ${coin} = "PBC" ]]; then
   satoshis=10000
 fi
